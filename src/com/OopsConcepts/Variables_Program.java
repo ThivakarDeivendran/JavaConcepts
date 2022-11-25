@@ -23,5 +23,7 @@ public class Variables_Program {
 		System.out.println(variableName.num);
 		variableName.numberMethod();
 		Variables_Program.staticmethod();
+		
+		System.out.println("git updation");
 	}
 }

@@ -13,6 +13,7 @@ public class Interface_Program implements Program7, Java_Program{
 			@Override
 			public void javaInterfaceMethod() {
 				System.out.println("Program7 Interface");
+				System.out.println("program to update for github");
 			}			
 }
 interface Program7 extends Java_Program{

@@ -14,6 +14,10 @@ public class Abstract_Program extends Program12{
 	public void methodProgram() {
 		System.out.println("methodProgram in class Program2");
 	}
+	
+	public static void testmethod(){
+		System.out.Println("this testMethod from GitHub");
+	}
 }
  abstract class Program12 extends program2{
 	 public abstract void  methodabstract();	

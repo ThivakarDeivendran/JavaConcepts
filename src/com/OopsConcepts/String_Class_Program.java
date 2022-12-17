@@ -30,7 +30,7 @@ public class String_Class_Program {
 			System.out.println(" identity hasCode Value  : "+ System.identityHashCode(name));
 			System.out.println("hasCode Value  : "+ designation.hashCode());
 			System.out.println(" identity hasCode Value  : "+ System.identityHashCode(designation));
-			
+			System.out.println("System update into GITHUB");
 			
 			
 		}

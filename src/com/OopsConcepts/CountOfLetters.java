@@ -23,7 +23,7 @@ public class CountOfLetters {
 		System.out.println("total number of SpcialCharacters : " +countOfSpecialCharacters);
 	}	
 	public static void main(String[] args) {
-		//countOfCapSmallLetters();			
+		countOfCapSmallLetters();			
 		
 	}
 

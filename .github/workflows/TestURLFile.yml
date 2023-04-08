@@ -1,0 +1,29 @@
+name: Testing with conditions
+on:
+  push:
+  workflow_dispatch:
+    
+env:
+  environmentname: Production
+  url: ${{secrets.QA_URL}}
+  
+jobs:
+  urlTestingConfirm:
+    runs-on: ubuntu-latest
+    steps:
+      - name: URLname
+        run: |
+          echo "Runnning test on ${{env.url}}for $environmentname"
+      - name: Print if QA URL
+        if: ${{env.environmentname=='QA'}}
+        run: echo "Hey your test will be run on the QA Environment...."
+      - name: Print if Prod URL
+        if: ${{env.environmentname=='Production'}}
+        run: echo "Hey your test will run on the Production Environment...."
+      - name: Print if Dev URL
+        if: ${{env.environmentname=='Dev'}}
+        run: echo "Hey your test will be run on the Dev Environment...."
+      - name: Github actor
+        run: |
+          echo "Github_Actor_variable_name : $GITHUB_ACTOR"
+          echo "Github_Job_variable_name : $GITHUB_JOB"

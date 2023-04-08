@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
     
 env:
-  environmentname: QA
+  environmentname: Production
   url: ${{secrets.QA_URL}}
   
 jobs:
-  urlTesting:
+  urlTestingConfirm:
     runs-on: ubuntu-latest
     steps:
       - name: URLname

@@ -16,5 +16,5 @@ public class PrimeNumber {
 		}
 		System.out.println(number + ((tempnumber==1)?" is not a prime number":" is a prime number"));
 	}
-
-}
+	 
+ }
